@@ -17,12 +17,12 @@
 			<input type="text" placeholder="Last Name" name="lastName" />
 			<input type="email" placeholder="Email Address" name="email" />
 			<input type="password" placeholder="Password" name="password" />
-      <button> Claim your free trial </button>
+			<button> Claim your free trial </button>
 		</form>
 	</div>
 </main>
 
-<style>
+<style lang="scss">
 	* {
 		box-sizing: border-box;
 		margin: 0;
@@ -33,25 +33,6 @@
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 			Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
-
-  input {
-    padding: 0.8rem 1rem;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: solid 1px rgb(196, 194, 194);
-    outline: none;
-  }
-
-  button {
-    padding: 0.8rem 1rem;
-    background-color: lightgreen;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
 
 	main {
 		min-height: 100vh;
@@ -72,15 +53,34 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-    align-items: center;
-	}
+		align-items: center;
 
-	form {
-		background-color: yellow;
-		display: flex;
-		flex-direction: column;
-    width: 400px;
-    padding: 1.5rem;
-    border-radius: 10px;
+		form {
+			background-color: yellow;
+			display: flex;
+			flex-direction: column;
+			width: 400px;
+			padding: 1.5rem;
+			border-radius: 10px;
+
+			input {
+				padding: 0.8rem 1rem;
+				margin: 10px 0;
+				border-radius: 5px;
+				border: solid 1px rgb(196, 194, 194);
+				outline: none;
+			}
+
+			button {
+				padding: 0.8rem 1rem;
+				background-color: lightgreen;
+				color: white;
+				text-transform: uppercase;
+				border: none;
+				outline: none;
+				border-radius: 5px;
+				margin-top: 10px;
+			}
+		}
 	}
 </style>
