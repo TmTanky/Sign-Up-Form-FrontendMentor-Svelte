@@ -8,11 +8,18 @@
 
 <style lang="scss">
 	.info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 5rem;
+
+        @media screen and (min-width: 500px) and (max-width: 849px) {
+			padding: 5rem 0;
+		}
+		@media screen and (min-width: 850px) and (max-width: 951px) {
+			margin: 0 2rem;
+		}
 
 		h1 {
 			color: white;
