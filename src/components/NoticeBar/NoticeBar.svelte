@@ -20,5 +20,12 @@
                 font-weight: 600;
             }
         }
+
+        @media screen and (min-width: 300px) and (max-width: 499px) {
+			min-width: 100%;
+		}
+        @media screen and (min-width: 850px) and (max-width: 951px) {
+			min-width: 400px;
+		}
     }
 </style>
