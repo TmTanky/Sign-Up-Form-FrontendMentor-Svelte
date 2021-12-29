@@ -1,20 +1,16 @@
 <script lang="ts">
+	import Info from './components/Info/Info.svelte'
 	import Form from './components/Form/Form.svelte'
+	import NoticeBar from './components/NoticeBar/NoticeBar.svelte'
 </script>
 
 <main>
 	<div class="greetings">
-		<div class="info">
-			<h1>Learn to code by watching others</h1>
-			<p>
-				See how experience developers solve problems in real-time. Watching
-				scripted tutorials is great, but understanding how developers think is
-				invaluable.
-			</p>
-		</div>
+		<Info />
 	</div>
 
 	<div class="form">
+		<NoticeBar />
 		<Form />
 	</div>
 </main>
@@ -25,31 +21,16 @@
 		display: flex;
 		background-image: url('./images/bg-intro-desktop.png');
 		background-color: hsl(0, 100%, 74%);
+		width: 100%;
 	}
 
 	div.greetings {
 		flex: 1;
 		display: flex;
-		justify-content: center;
-		flex-direction: column;
-
-		.info {
-			margin: 0 10rem;
-
-			h1 {
-				color: white;
-				font-size: 40px;
-			}
-			p {
-				margin-top: 15px;
-				color: white;
-			}
-		}
 	}
 
 	div.form {
 		flex: 1;
-		/* background-color: hsl(0, 100%, 74%); */
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
