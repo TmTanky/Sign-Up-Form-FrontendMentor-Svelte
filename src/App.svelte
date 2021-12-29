@@ -1,43 +1,30 @@
 <script lang="ts">
+	import Form from './components/Form/Form.svelte'
 </script>
 
 <main>
 	<div class="greetings">
-		<h1>Learn to code by watching others</h1>
-		<p>
-			See how experience developers solve problems in real-time. Watching
-			scripted tutorials is great, but understanding how developers think is
-			invaluable
-		</p>
+		<div class="info">
+			<h1>Learn to code by watching others</h1>
+			<p>
+				See how experience developers solve problems in real-time. Watching
+				scripted tutorials is great, but understanding how developers think is
+				invaluable.
+			</p>
+		</div>
 	</div>
 
 	<div class="form">
-		<form action="">
-			<input type="text" placeholder="First Name" name="firstName" />
-			<input type="text" placeholder="Last Name" name="lastName" />
-			<input type="email" placeholder="Email Address" name="email" />
-			<input type="password" placeholder="Password" name="password" />
-			<button> Claim your free trial </button>
-		</form>
+		<Form />
 	</div>
 </main>
 
 <style lang="scss">
-	* {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-	}
-
-	:root {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-			Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	}
-
 	main {
 		min-height: 100vh;
-		background-color: red;
 		display: flex;
+		background-image: url('./images/bg-intro-desktop.png');
+		background-color: hsl(0, 100%, 74%);
 	}
 
 	div.greetings {
@@ -45,42 +32,27 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+
+		.info {
+			margin: 0 10rem;
+
+			h1 {
+				color: white;
+				font-size: 40px;
+			}
+			p {
+				margin-top: 15px;
+				color: white;
+			}
+		}
 	}
 
 	div.form {
 		flex: 1;
-		background-color: blue;
+		/* background-color: hsl(0, 100%, 74%); */
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
-
-		form {
-			background-color: yellow;
-			display: flex;
-			flex-direction: column;
-			width: 400px;
-			padding: 1.5rem;
-			border-radius: 10px;
-
-			input {
-				padding: 0.8rem 1rem;
-				margin: 10px 0;
-				border-radius: 5px;
-				border: solid 1px rgb(196, 194, 194);
-				outline: none;
-			}
-
-			button {
-				padding: 0.8rem 1rem;
-				background-color: lightgreen;
-				color: white;
-				text-transform: uppercase;
-				border: none;
-				outline: none;
-				border-radius: 5px;
-				margin-top: 10px;
-			}
-		}
 	}
 </style>
